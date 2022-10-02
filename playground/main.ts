@@ -1,5 +1,5 @@
-import { input, output } from './src/data'
-import { calculatePatch, createAnimator, patch } from './src'
+import { input, output } from '../packages/core/src/data'
+import { calculatePatch, createAnimator, patch } from '../packages/core/src'
 
 const typingEl = document.getElementById('typing') as HTMLElement
 const inputEl = document.getElementById('input') as HTMLTextAreaElement
