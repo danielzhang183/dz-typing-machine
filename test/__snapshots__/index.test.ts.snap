@@ -1,0 +1,84 @@
+// Vitest Snapshot v1
+
+exports[`should > exported > diff 1`] = `
+[
+  [
+    0,
+    "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('",
+  ],
+  [
+    -1,
+    "exported",
+  ],
+  [
+    1,
+    "one",
+  ],
+  [
+    0,
+    "', () => {
+    expect(one).toEqual(1)
+  })",
+  ],
+  [
+    1,
+    "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+  ],
+  [
+    0,
+    "
+})
+",
+  ],
+]
+`;
+
+exports[`should > exported > patches 1`] = `
+[
+  {
+    "from": 89,
+    "length": 8,
+    "type": "removal",
+  },
+  {
+    "from": 81,
+    "text": "one",
+    "type": "insert",
+  },
+  {
+    "from": 126,
+    "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+    "type": "insert",
+  },
+]
+`;
+
+exports[`should > exported > res 1`] = `
+{
+  "output": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one, () => {
+    expect(one).toEqual(1)
+  })
+
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })})
+",
+}
+`;
