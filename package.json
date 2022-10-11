@@ -1,22 +1,27 @@
 {
   "name": "@dz-typing-machine/monorepo",
+  "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@7.13.4",
   "scripts": {
-    "build": "rimraf dist && unbuild",
+    "build": "pnpm -r run build",
     "dev": "vite playground",
-    "stub": "unbuild --stub",
+    "play": "vite playground",
+    "stub": "pnpm -r run stub",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp --commit --push --tag && pnpm publish",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "vscode": "pnpm -C packages/vscode run dev",
+    "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
-    "@antfu/ni": "^0.18.0",
     "@antfu/utils": "^0.5.2",
+    "@types/diff-match-patch": "^1.0.32",
     "@types/node": "^18.7.18",
     "bumpp": "^8.2.1",
+    "diff-match-patch": "^1.0.5",
     "eslint": "^8.23.1",
     "esno": "^0.16.3",
     "pnpm": "^7.12.0",

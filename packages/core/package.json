@@ -38,12 +38,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
+    "build": "rimraf dist && unbuild",
     "stub": "unbuild --stub",
-    "prepublishOnly": "nr build"
+    "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
-    "@types/diff-match-patch": "^1.0.32",
     "diff-match-patch": "^1.0.5"
   }
 }
