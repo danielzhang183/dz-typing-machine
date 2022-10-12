@@ -17,7 +17,7 @@ async function start() {
   const patches = calculatePatch(patch(_input, output))
   const animator = createAnimator(_input, patches)
   for (const result of animator) {
-    typingEl.textContent = result.output
+    typingEl.textContent = result.content
     await sleep(100)
   }
 }

@@ -3,264 +3,63 @@
   "name": "typing-machine",
   "displayName": "Typing Machine",
   "version": "0.0.0",
+  "private": true,
   "description": "",
   "homepage": "https://github.com/danielzhang183/dz-typing-machine",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielzhang183/dz-typing-machine"
+    "url": "git+https://github.com/danielzhang183/dz-typing-machine",
+    "directory": "packages/core"
   },
   "bugs": "https://github.com/antfu/wenyan-lang-vscode/issues",
   "keywords": [
-    "wenyan",
-    "wenyan-lang"
+    "typing machine"
   ],
   "categories": [
-    "Programming Languages",
-    "Snippets"
+    "Other"
   ],
-  "main": "./dist/extension",
-  "icon": "res/logo.png",
+  "main": "./dist/index.js",
   "engines": {
-    "vscode": "^1.41.0"
+    "vscode": "^1.65.0"
   },
   "activationEvents": [
-    "onLanguage:wenyan",
-    "onLanguage:javascript"
+    "*"
   ],
   "contributes": {
-    "languages": [
-      {
-        "id": "wenyan",
-        "aliases": [
-          "文言"
-        ],
-        "extensions": [
-          ".wy",
-          ".文言",
-          "經",
-          "篇",
-          "章",
-          "書"
-        ]
-      }
-    ],
-    "snippets": [
-      {
-        "language": "wenyan",
-        "path": "./snippets/static.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "wenyan",
-        "scopeName": "source.wenyan",
-        "path": "./syntaxes/tmGrammar.json"
-      }
-    ],
     "commands": [
       {
-        "command": "extension.wenyan-lang.execute",
-        "title": "%command.execute%",
-        "category": "%extname%",
-        "icon": {
-          "dark": "./res/dark/debug-start.svg",
-          "light": "./res/light/debug-start.svg"
-        }
+        "category": "typingMachine",
+        "command": "typingMachine.snap",
+        "title": "Take snapshot of current file",
+        "icon": "$(diff-added)"
       },
       {
-        "command": "extension.wenyan-lang.compile",
-        "title": "%command.compile%",
-        "category": "%extname%",
-        "icon": {
-          "dark": "./res/dark/code.svg",
-          "light": "./res/light/code.svg"
-        }
-      },
-      {
-        "command": "extension.wenyan-lang.reload",
-        "title": "%command.reload%",
-        "category": "%extname%",
-        "icon": {
-          "dark": "./res/dark/debug-restart.svg",
-          "light": "./res/light/debug-restart.svg"
-        }
-      },
-      {
-        "command": "extension.wenyan-lang.render",
-        "title": "%command.render%",
-        "category": "%extname%",
-        "icon": {
-          "dark": "./res/dark/device-camera.svg",
-          "light": "./res/light/device-camera.svg"
-        }
-      },
-      {
-        "command": "extension.wenyan-lang.wenyanize",
-        "title": "%command.wenyanize%",
-        "category": "%extname%",
-        "icon": {
-          "dark": "./res/dark/wenyan.svg",
-          "light": "./res/light/wenyan.svg"
-        }
+        "category": "typingMachine",
+        "command": "typingMachine.play",
+        "title": "Play typewritter",
+        "icon": "$(play)"
       }
     ],
     "menus": {
-      "commandPalette": [
-        {
-          "when": "config.not_exists",
-          "command": "extension.wenyan-lang.compile"
-        },
-        {
-          "when": "config.not_exists",
-          "command": "extension.wenyan-lang.execute"
-        },
-        {
-          "when": "config.not_exists",
-          "command": "extension.wenyan-lang.reload"
-        },
-        {
-          "when": "config.not_exists",
-          "command": "extension.wenyan-lang.render"
-        }
-      ],
       "editor/title": [
         {
-          "command": "extension.wenyan-lang.render",
-          "group": "navigation@1170",
-          "when": "editorLangId == wenyan && resourceScheme != wenyan"
+          "command": "typingMachine.snap",
+          "group": "navigation@1170"
         },
         {
-          "command": "extension.wenyan-lang.compile",
-          "group": "navigation@1171",
-          "when": "editorLangId == wenyan && resourceScheme != wenyan"
-        },
-        {
-          "command": "extension.wenyan-lang.execute",
-          "group": "navigation@1172",
-          "when": "editorLangId == wenyan && resourceScheme != wenyan"
-        },
-        {
-          "command": "extension.wenyan-lang.reload",
-          "group": "navigation",
-          "when": "resourceScheme == wenyan"
-        },
-        {
-          "command": "extension.wenyan-lang.wenyanize",
-          "group": "navigation",
-          "when": "editorLangId == javascript && resourceScheme != wenyan"
+          "command": "typingMachine.play",
+          "group": "navigation@1170"
         }
       ]
-    },
-    "configuration": [
-      {
-        "type": "object",
-        "title": "%extname%",
-        "properties": {
-          "wenyan-lang.executablePath": {
-            "type": "string",
-            "description": "%config.executable_path%"
-          },
-          "wenyan-lang.targetLanguage": {
-            "type": "string",
-            "enum": [
-              "javascript",
-              "python",
-              "ruby"
-            ],
-            "default": "javascript",
-            "description": "%config.target_language%"
-          },
-          "wenyan-lang.runOnSave": {
-            "type": "boolean",
-            "default": true,
-            "description": "%config.run_on_save%"
-          },
-          "wenyan-lang.romanizeMethod": {
-            "type": "string",
-            "enum": [
-              "pinyin",
-              "baxter",
-              "unicode"
-            ],
-            "default": null,
-            "description": "%config.run_on_save%"
-          }
-        }
-      }
-    ]
-  },
-  "configurationDefaults": {
-    "[wenyan]": {
-      "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?。、「」"
     }
   },
-  "standard-version": {
-    "types": [
-      {
-        "type": "feat",
-        "section": "⚡ Features"
-      },
-      {
-        "type": "fix",
-        "section": "🐞 Bug Fixes"
-      },
-      {
-        "type": "refactor",
-        "section": "🔮 Refactor"
-      },
-      {
-        "type": "test",
-        "section": "⚗ Tests"
-      },
-      {
-        "type": "docs",
-        "section": "📚 Documentations"
-      },
-      {
-        "type": "i18n",
-        "section": "🌍 Internationalization"
-      },
-      {
-        "type": "ci",
-        "hidden": true
-      }
-    ]
-  },
   "scripts": {
-    "publish:minor": "standard-version --release-as minor && git push --follow-tags && vsce publish && npm run gh-release",
-    "publish:patch": "standard-version --release-as patch && git push --follow-tags && vsce publish && npm run gh-release",
-    "gh-release": "conventional-github-releaser -p angular",
-    "copy-dist": "npx cpy node_modules/@wenyanlang/cli/index.min.js dist --rename wenyan.js && npx cpy node_modules/@wenyanlang/highlight/tmGrammar.json syntaxes",
-    "vscode:prepublish": "npm run copy-dist && webpack --mode development",
-    "compile": "npm run copy-dist && webpack --mode development",
-    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
-    "watch": "npm run copy-dist && webpack --mode development --watch",
-    "test": "jest"
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "pnpm run build --watch",
+    "publish": "vsce publish --no-dependencies"
   },
   "devDependencies": {
-    "@antfu/eslint-config-ts": "0.2.11",
-    "@types/jest": "^25.2.3",
-    "@types/node": "13.5.2",
-    "@types/prettier": "^1.19.1",
-    "@types/vscode": "^1.41.0",
-    "@typescript-eslint/eslint-plugin": "2.18.0",
-    "@typescript-eslint/parser": "2.18.0",
-    "@wenyan/core": "^0.3.4",
-    "@wenyanlang/cli": "^0.3.2",
-    "@wenyanlang/highlight": "0.0.8",
-    "conventional-github-releaser": "3.1.3",
-    "cpy-cli": "^3.1.1",
-    "eslint": "6.8.0",
-    "jest": "^25.5.4",
-    "prettier": "^1.19.1",
-    "rimraf": "3.0.1",
-    "standard-version": "7.1.0",
-    "ts-jest": "^25.5.1",
-    "ts-loader": "6.2.1",
-    "typescript": "^3.9.9",
-    "webpack": "4.41.5",
-    "webpack-cli": "3.3.10",
-    "wenyanizer": "^0.2.10"
+    "@types/vscode": "^1.72.0",
+    "tsup": "^5.12.9"
   }
 }
