@@ -1,0 +1,1572 @@
+// Vitest Snapshot v1
+
+exports[`should > animator > animator 1`] = `
+[
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('exporte', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 88,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('export', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 87,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('expor', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 86,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('expo', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 85,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('exp', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 84,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('ex', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 83,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('e', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 82,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 81,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "patchIndex": 0,
+  },
+  {
+    "char": "o",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('o', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 82,
+    "patch": {
+      "from": 81,
+      "text": "one",
+      "type": "insert",
+    },
+    "patchIndex": 1,
+  },
+  {
+    "char": "n",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('on', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 83,
+    "patch": {
+      "from": 81,
+      "text": "one",
+      "type": "insert",
+    },
+    "patchIndex": 1,
+  },
+  {
+    "char": "e",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+})
+",
+    "cursor": 84,
+    "patch": {
+      "from": 81,
+      "text": "one",
+      "type": "insert",
+    },
+    "patchIndex": 1,
+  },
+  {
+    "char": "
+",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+})
+",
+    "cursor": 127,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "
+",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+
+})
+",
+    "cursor": 128,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+ 
+})
+",
+    "cursor": 129,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  
+})
+",
+    "cursor": 130,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "i",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  i
+})
+",
+    "cursor": 131,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "t",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it
+})
+",
+    "cursor": 132,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "(",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it(
+})
+",
+    "cursor": 133,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "'",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('
+})
+",
+    "cursor": 134,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "t",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('t
+})
+",
+    "cursor": 135,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "w",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('tw
+})
+",
+    "cursor": 136,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "o",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two
+})
+",
+    "cursor": 137,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "'",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two'
+})
+",
+    "cursor": 138,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": ",",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two',
+})
+",
+    "cursor": 139,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', 
+})
+",
+    "cursor": 140,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "(",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', (
+})
+",
+    "cursor": 141,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": ")",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', ()
+})
+",
+    "cursor": 142,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () 
+})
+",
+    "cursor": 143,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "=",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () =
+})
+",
+    "cursor": 144,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": ">",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () =>
+})
+",
+    "cursor": 145,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => 
+})
+",
+    "cursor": 146,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "{",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+})
+",
+    "cursor": 147,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "
+",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+
+})
+",
+    "cursor": 148,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+ 
+})
+",
+    "cursor": 149,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+  
+})
+",
+    "cursor": 150,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+   
+})
+",
+    "cursor": 151,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    
+})
+",
+    "cursor": 152,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "e",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    e
+})
+",
+    "cursor": 153,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "x",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    ex
+})
+",
+    "cursor": 154,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "p",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    exp
+})
+",
+    "cursor": 155,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "e",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expe
+})
+",
+    "cursor": 156,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "c",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expec
+})
+",
+    "cursor": 157,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "t",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect
+})
+",
+    "cursor": 158,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "(",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(
+})
+",
+    "cursor": 159,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "t",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(t
+})
+",
+    "cursor": 160,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "w",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(tw
+})
+",
+    "cursor": 161,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "o",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two
+})
+",
+    "cursor": 162,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": ")",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two)
+})
+",
+    "cursor": 163,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": ".",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).
+})
+",
+    "cursor": 164,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "t",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).t
+})
+",
+    "cursor": 165,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "o",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).to
+})
+",
+    "cursor": 166,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "E",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toE
+})
+",
+    "cursor": 167,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "q",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEq
+})
+",
+    "cursor": 168,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "u",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqu
+})
+",
+    "cursor": 169,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "a",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqua
+})
+",
+    "cursor": 170,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "l",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual
+})
+",
+    "cursor": 171,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "(",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(
+})
+",
+    "cursor": 172,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "2",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2
+})
+",
+    "cursor": 173,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": ")",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2)
+})
+",
+    "cursor": 174,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "
+",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2)
+
+})
+",
+    "cursor": 175,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2)
+ 
+})
+",
+    "cursor": 176,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": " ",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  
+})
+",
+    "cursor": 177,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": "}",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  }
+})
+",
+    "cursor": 178,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+  {
+    "char": ")",
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })
+})
+",
+    "cursor": 179,
+    "patch": {
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
+      "type": "insert",
+    },
+    "patchIndex": 2,
+  },
+]
+`;

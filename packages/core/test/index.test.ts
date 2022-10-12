@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { applyPatch, calculatePatch, patch } from '../packages/core/src'
-import { input, output } from '../packages/core/src/data'
+import { applyPatch, calculatePatch, patch } from '../src'
+import { input, output } from './fixture'
 
 describe('should', () => {
   it('exported', () => {
