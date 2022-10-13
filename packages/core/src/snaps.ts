@@ -1,11 +1,5 @@
-export interface Snapshot {
-  content: string
-  options?: SnapshotOptions
-}
-
-export interface SnapshotOptions {
-  wait?: number
-}
+import { simpleAnimator } from './animator'
+import type { AnimatorStep, Snapshot } from './types'
 
 export const SNAP_HEADING = 'typingMachine Snapshots v1'
 export const SNAP_SEPERATOR_PRE = '-'.repeat(2)
@@ -61,6 +55,34 @@ export class Snapshots extends Array<Snapshot> {
     }
 
     return new Snapshots(...snapshots)
+  }
+
+  * animate(): Generator<AnimatorStep> {
+    let lastContent: string | undefined
+    const copy = [...this]
+    for (let index = 0; index < copy.length; index++) {
+      const snap = copy[index]
+      if (lastContent == null) {
+        lastContent = snap.content
+        yield {
+          type: 'init',
+          content: lastContent,
+        }
+        continue
+      }
+
+      yield {
+        type: 'new-snap',
+        snap,
+        index,
+      }
+
+      const animator = simpleAnimator(lastContent, snap.content)
+      for (const result of animator)
+        yield result
+
+      lastContent = snap.content
+    }
   }
 }
 

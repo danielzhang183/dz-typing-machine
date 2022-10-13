@@ -3,6 +3,15 @@
 exports[`should > animator > animator 1`] = `
 [
   {
+    "index": 0,
+    "patch": {
+      "from": 89,
+      "length": 8,
+      "type": "removal",
+    },
+    "type": "new-patch",
+  },
+  {
     "content": "
 import { describe, expect, it } from 'vitest'
 
@@ -13,12 +22,7 @@ describe('should', () => {
 })
 ",
     "cursor": 88,
-    "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
-    },
-    "patchIndex": 0,
+    "type": "removal",
   },
   {
     "content": "
@@ -31,12 +35,7 @@ describe('should', () => {
 })
 ",
     "cursor": 87,
-    "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
-    },
-    "patchIndex": 0,
+    "type": "removal",
   },
   {
     "content": "
@@ -49,12 +48,7 @@ describe('should', () => {
 })
 ",
     "cursor": 86,
-    "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
-    },
-    "patchIndex": 0,
+    "type": "removal",
   },
   {
     "content": "
@@ -67,12 +61,7 @@ describe('should', () => {
 })
 ",
     "cursor": 85,
-    "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
-    },
-    "patchIndex": 0,
+    "type": "removal",
   },
   {
     "content": "
@@ -85,12 +74,7 @@ describe('should', () => {
 })
 ",
     "cursor": 84,
-    "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
-    },
-    "patchIndex": 0,
+    "type": "removal",
   },
   {
     "content": "
@@ -103,12 +87,7 @@ describe('should', () => {
 })
 ",
     "cursor": 83,
-    "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
-    },
-    "patchIndex": 0,
+    "type": "removal",
   },
   {
     "content": "
@@ -121,12 +100,7 @@ describe('should', () => {
 })
 ",
     "cursor": 82,
-    "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
-    },
-    "patchIndex": 0,
+    "type": "removal",
   },
   {
     "content": "
@@ -139,12 +113,16 @@ describe('should', () => {
 })
 ",
     "cursor": 81,
+    "type": "removal",
+  },
+  {
+    "index": 1,
     "patch": {
-      "from": 89,
-      "length": 8,
-      "type": "removal",
+      "from": 81,
+      "text": "one",
+      "type": "insert",
     },
-    "patchIndex": 0,
+    "type": "new-patch",
   },
   {
     "char": "o",
@@ -158,12 +136,7 @@ describe('should', () => {
 })
 ",
     "cursor": 82,
-    "patch": {
-      "from": 81,
-      "text": "one",
-      "type": "insert",
-    },
-    "patchIndex": 1,
+    "type": "insert",
   },
   {
     "char": "n",
@@ -177,12 +150,7 @@ describe('should', () => {
 })
 ",
     "cursor": 83,
-    "patch": {
-      "from": 81,
-      "text": "one",
-      "type": "insert",
-    },
-    "patchIndex": 1,
+    "type": "insert",
   },
   {
     "char": "e",
@@ -196,12 +164,20 @@ describe('should', () => {
 })
 ",
     "cursor": 84,
+    "type": "insert",
+  },
+  {
+    "index": 2,
     "patch": {
-      "from": 81,
-      "text": "one",
+      "from": 126,
+      "text": "
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })",
       "type": "insert",
     },
-    "patchIndex": 1,
+    "type": "new-patch",
   },
   {
     "char": "
@@ -217,16 +193,7 @@ describe('should', () => {
 })
 ",
     "cursor": 127,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "
@@ -243,16 +210,7 @@ describe('should', () => {
 })
 ",
     "cursor": 128,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -268,16 +226,7 @@ describe('should', () => {
 })
 ",
     "cursor": 129,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -293,16 +242,7 @@ describe('should', () => {
 })
 ",
     "cursor": 130,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "i",
@@ -318,16 +258,7 @@ describe('should', () => {
 })
 ",
     "cursor": 131,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "t",
@@ -343,16 +274,7 @@ describe('should', () => {
 })
 ",
     "cursor": 132,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "(",
@@ -368,16 +290,7 @@ describe('should', () => {
 })
 ",
     "cursor": 133,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "'",
@@ -393,16 +306,7 @@ describe('should', () => {
 })
 ",
     "cursor": 134,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "t",
@@ -418,16 +322,7 @@ describe('should', () => {
 })
 ",
     "cursor": 135,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "w",
@@ -443,16 +338,7 @@ describe('should', () => {
 })
 ",
     "cursor": 136,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "o",
@@ -468,16 +354,7 @@ describe('should', () => {
 })
 ",
     "cursor": 137,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "'",
@@ -493,16 +370,7 @@ describe('should', () => {
 })
 ",
     "cursor": 138,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": ",",
@@ -518,16 +386,7 @@ describe('should', () => {
 })
 ",
     "cursor": 139,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -543,16 +402,7 @@ describe('should', () => {
 })
 ",
     "cursor": 140,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "(",
@@ -568,16 +418,7 @@ describe('should', () => {
 })
 ",
     "cursor": 141,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": ")",
@@ -593,16 +434,7 @@ describe('should', () => {
 })
 ",
     "cursor": 142,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -618,16 +450,7 @@ describe('should', () => {
 })
 ",
     "cursor": 143,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "=",
@@ -643,16 +466,7 @@ describe('should', () => {
 })
 ",
     "cursor": 144,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": ">",
@@ -668,16 +482,7 @@ describe('should', () => {
 })
 ",
     "cursor": 145,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -693,16 +498,7 @@ describe('should', () => {
 })
 ",
     "cursor": 146,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "{",
@@ -718,16 +514,7 @@ describe('should', () => {
 })
 ",
     "cursor": 147,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "
@@ -745,16 +532,7 @@ describe('should', () => {
 })
 ",
     "cursor": 148,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -771,16 +549,7 @@ describe('should', () => {
 })
 ",
     "cursor": 149,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -797,16 +566,7 @@ describe('should', () => {
 })
 ",
     "cursor": 150,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -823,16 +583,7 @@ describe('should', () => {
 })
 ",
     "cursor": 151,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -849,16 +600,7 @@ describe('should', () => {
 })
 ",
     "cursor": 152,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "e",
@@ -875,16 +617,7 @@ describe('should', () => {
 })
 ",
     "cursor": 153,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "x",
@@ -901,16 +634,7 @@ describe('should', () => {
 })
 ",
     "cursor": 154,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "p",
@@ -927,16 +651,7 @@ describe('should', () => {
 })
 ",
     "cursor": 155,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "e",
@@ -953,16 +668,7 @@ describe('should', () => {
 })
 ",
     "cursor": 156,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "c",
@@ -979,16 +685,7 @@ describe('should', () => {
 })
 ",
     "cursor": 157,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "t",
@@ -1005,16 +702,7 @@ describe('should', () => {
 })
 ",
     "cursor": 158,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "(",
@@ -1031,16 +719,7 @@ describe('should', () => {
 })
 ",
     "cursor": 159,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "t",
@@ -1057,16 +736,7 @@ describe('should', () => {
 })
 ",
     "cursor": 160,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "w",
@@ -1083,16 +753,7 @@ describe('should', () => {
 })
 ",
     "cursor": 161,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "o",
@@ -1109,16 +770,7 @@ describe('should', () => {
 })
 ",
     "cursor": 162,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": ")",
@@ -1135,16 +787,7 @@ describe('should', () => {
 })
 ",
     "cursor": 163,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": ".",
@@ -1161,16 +804,7 @@ describe('should', () => {
 })
 ",
     "cursor": 164,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "t",
@@ -1187,16 +821,7 @@ describe('should', () => {
 })
 ",
     "cursor": 165,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "o",
@@ -1213,16 +838,7 @@ describe('should', () => {
 })
 ",
     "cursor": 166,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "E",
@@ -1239,16 +855,7 @@ describe('should', () => {
 })
 ",
     "cursor": 167,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "q",
@@ -1265,16 +872,7 @@ describe('should', () => {
 })
 ",
     "cursor": 168,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "u",
@@ -1291,16 +889,7 @@ describe('should', () => {
 })
 ",
     "cursor": 169,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "a",
@@ -1317,16 +906,7 @@ describe('should', () => {
 })
 ",
     "cursor": 170,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "l",
@@ -1343,16 +923,7 @@ describe('should', () => {
 })
 ",
     "cursor": 171,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "(",
@@ -1369,16 +940,7 @@ describe('should', () => {
 })
 ",
     "cursor": 172,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "2",
@@ -1395,16 +957,7 @@ describe('should', () => {
 })
 ",
     "cursor": 173,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": ")",
@@ -1421,16 +974,7 @@ describe('should', () => {
 })
 ",
     "cursor": 174,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "
@@ -1449,16 +993,7 @@ describe('should', () => {
 })
 ",
     "cursor": 175,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -1476,16 +1011,7 @@ describe('should', () => {
 })
 ",
     "cursor": 176,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": " ",
@@ -1503,16 +1029,7 @@ describe('should', () => {
 })
 ",
     "cursor": 177,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": "}",
@@ -1530,16 +1047,7 @@ describe('should', () => {
 })
 ",
     "cursor": 178,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
   {
     "char": ")",
@@ -1557,16 +1065,7 @@ describe('should', () => {
 })
 ",
     "cursor": 179,
-    "patch": {
-      "from": 126,
-      "text": "
-
-  it('two', () => {
-    expect(two).toEqual(2)
-  })",
-      "type": "insert",
-    },
-    "patchIndex": 2,
+    "type": "insert",
   },
 ]
 `;
