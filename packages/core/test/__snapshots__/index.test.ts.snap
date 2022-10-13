@@ -44,41 +44,39 @@ describe('should', () => {
 exports[`should > exported > patches 1`] = `
 [
   {
-    "from": 89,
+    "cursor": 89,
     "length": 8,
     "type": "removal",
   },
   {
-    "from": 81,
-    "text": "one",
+    "content": "one",
+    "cursor": 81,
     "type": "insert",
   },
   {
-    "from": 126,
-    "text": "
+    "content": "
 
   it('two', () => {
     expect(two).toEqual(2)
   })",
+    "cursor": 126,
     "type": "insert",
   },
 ]
 `;
 
 exports[`should > exported > res 1`] = `
-{
-  "output": "
+"
 import { describe, expect, it } from 'vitest'
 
 describe('should', () => {
-  it('one, () => {
+  it('one', () => {
     expect(one).toEqual(1)
   })
 
-
   it('two', () => {
     expect(two).toEqual(2)
-  })})
-",
-}
+  })
+})
+"
 `;

@@ -1,0 +1,23 @@
+typingMachine Snapshots v1
+--01----------
+
+--------------
+--02----------
+import { createApp } from 'vue'
+
+const app = createApp()
+--------------
+--03----------
+import { createApp } from 'vue'
+import App from './App.vue'
+
+const app = createApp(App)
+--------------
+--04----------
+import { createApp } from 'vue'
+import App from './App.vue'
+
+const app = createApp(App)
+app.mount('#app')
+--------------
+--------------

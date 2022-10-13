@@ -5,7 +5,7 @@ exports[`should > animator > animator 1`] = `
   {
     "index": 0,
     "patch": {
-      "from": 89,
+      "cursor": 89,
       "length": 8,
       "type": "removal",
     },
@@ -118,8 +118,8 @@ describe('should', () => {
   {
     "index": 1,
     "patch": {
-      "from": 81,
-      "text": "one",
+      "content": "one",
+      "cursor": 81,
       "type": "insert",
     },
     "type": "new-patch",
@@ -169,12 +169,12 @@ describe('should', () => {
   {
     "index": 2,
     "patch": {
-      "from": 126,
-      "text": "
+      "content": "
 
   it('two', () => {
     expect(two).toEqual(2)
   })",
+      "cursor": 126,
       "type": "insert",
     },
     "type": "new-patch",
@@ -1066,6 +1066,22 @@ describe('should', () => {
 ",
     "cursor": 179,
     "type": "insert",
+  },
+  {
+    "content": "
+import { describe, expect, it } from 'vitest'
+
+describe('should', () => {
+  it('one', () => {
+    expect(one).toEqual(1)
+  })
+
+  it('two', () => {
+    expect(two).toEqual(2)
+  })
+})
+",
+    "type": "snap-finish",
   },
 ]
 `;

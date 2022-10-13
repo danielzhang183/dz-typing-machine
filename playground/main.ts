@@ -1,4 +1,4 @@
-import { input, output } from '../packages/core/src/data'
+import { input, output } from '../packages/core/test/fixture'
 import { calculatePatch, createAnimator, patch } from '../packages/core/src'
 
 const typingEl = document.getElementById('typing') as HTMLElement
